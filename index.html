@@ -10,7 +10,7 @@
             rel="stylesheet"
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
             crossorigin="anonymous">
-            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </head>
     <body>
         <h1 class="titel">Number Guessing Game!!</h1>
@@ -21,13 +21,16 @@
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Guest number 0-10</h5>
-                            <input type="number" placeholder="Enter number" id="inputText1">
+                            <input type="number" placeholder="Enter number"
+                                id="inputText1">
                             <br>
                             <br>
-                            <input type="button" value="Submit" onclick="btnAddsumbit()">
+                            <input id="btnClose" type="button" value="Submit"
+                                onclick="btnAddsumbit()">
 
-                            <p id="output"></p>
-                            
+                            <h6 id="output">
+                            </h6>
+
                         </div>
                     </div>
                 </div>
