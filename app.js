@@ -11,17 +11,19 @@ console.log(randomnum);
 function btnAddsumbit() {
     let txtInput = document.getElementById("inputText1").value;
     let output = document.getElementById("output");
-    let submitbtn = document.getElementById("btnClose");
+    let submitBtn = document.getElementById("btnClose");
    
     attemp++;
 
     if(randomnum==txtInput){
         output.textContent="You win 😍";
+        submitBtn.disabled = true;
         return;
     }
 
     if(attemp>=3){
         output.textContent="You've run out of attempts. Please try again.";
+        submitBtn.disabled = true;
         return;
     }
 
